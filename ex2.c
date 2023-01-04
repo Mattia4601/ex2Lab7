@@ -149,7 +149,7 @@ int checkSol(int *sol,diag_t **p_vetDiag, elem_t *vEl,float *scoreProgramma){
         ok3=1;//terzo vincolo soddisfatto!
     }
 
-    if(ok1==ok2==ok3==1){
+    if(ok1==1 && ok2==1 && ok3==1){
         return 1;//programma che soddisfa tutti i vincoli!
     }
     return 0;//non soddisfa tutti i requisiti
